@@ -14,12 +14,14 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements OnClickListener {
     private Button exitButton;
     private TextView salutation;
+    private View mainView;
 
     //Called when the activity is first created.
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mainView = findViewById(R.id.mainView);
         exitButton = (Button)findViewById(R.id.exitButton);
         exitButton.setOnClickListener(this);
     }
