@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mainView = findViewById(R.id.mainView);
+        mainView.setBackgroundColor(
+                getResources().getColor(R.color.DarkSlateGray, null)
+        );
         exitButton = (Button)findViewById(R.id.exitButton);
         exitButton.setOnClickListener(this);
     }
